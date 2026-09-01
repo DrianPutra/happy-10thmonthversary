@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff78ad" />
+  <title>Happy Monthversary 💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Opening -->
+  <div class="opening" id="opening">
+    <div class="opening-glow glow-one"></div>
+    <div class="opening-glow glow-two"></div>
+
+    <div class="opening-card">
+      <span class="eyebrow">a little surprise for you ♡</span>
+      <h1>Happy<br><span>Monthversary</span></h1>
+      <p>Ada bunga kecil dan beberapa kata yang aku simpan khusus buat eepy sayang.</p>
+      <button class="primary-btn" id="openButton">
+        Buka kejutan
+        <span>🌷</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main id="mainContent" class="main-content">
+    <section class="hero section">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+
+      <div class="hero-copy reveal">
+        <p class="mini-title">01 • for my favorite person</p>
+        <h2>Happy <span>10th Monthversary</span>,<br>my love 💗</h2>
+        <p class="hero-text">
+          Another month with you, another collection of little moments
+          that somehow mean so much to me.
+        </p>
+
+        <button class="soft-btn" id="messageButton">
+          Baca ucapanku
+          <span>↓</span>
+        </button>
+      </div>
+
+      <div class="bouquet-wrap reveal" id="bouquetWrap" title="Klik bunganya ✨">
+        <div class="bouquet-halo"></div>
+        <img
+          src="rose-bouquet.png"
+          alt="Rose pink flower bouquet"
+          class="bouquet"
+          id="bouquet"
+        />
+        <div class="tap-hint">tap the flowers ✦</div>
+      </div>
+    </section>
+
+    <section class="message-section section" id="messageSection">
+      <div class="message-card reveal">
+        <div class="quote-mark">“</div>
+        <p class="mini-title">02 • a note for u eepy</p>
+
+        <h3>Untuk eepy yang selalu<br><span>punya tempat spesial.</span></h3>
+
+        <p>
+          Happy monthversary yang ke 10 bulan, sayang. makasih karena sampai 
+          hari ini eepy masih jadi bagian dari hari-hari kari. kari mungkin nggak 
+          selalu sempurna dalam menunjukkan rasa sayangnya kari, tapi satu hal yang pasti:
+          kari akan selalu memilih eepy lagi dan lagi, selamanya.
+        </p>
+
+        <p>
+          kari harap bulan-bulan berikutnya dipenuhi lebih banyak tawa,
+          cerita random, quality time, dan kebahagiaan untuk kita berdua
+          ya sayang ♡.
+        </p>
+
+        <p>
+          kari minta maaf ya sayang kalau di tanggal 2 di tanggal jadian
+          kita ini, kari masih belum bisa untuk kasi eepy bunga, dan kari
+          juga minta maaf banget sayang sampai sekarang kari masih gada
+          ngasi eepy suprise, kari minta maaf ya kalau progress nya lama,
+          tapi yang pasti kari prepare dengan bener bener ya sayang ♡♡
+          i love you as always sayang ♡♡♡.
+        </p>
+
+        <p>
+          kari bener bener sayang banget sama eepy, kari pasti bisa buktiin 
+          kalau kari emang bisa berhasil ya sayang, jadi tunggu kari untuk
+          bisa kasi pembuktian ke eepy sayang yaa ♡ kari pasti akan buktiin,
+          dan bahagia in eepy sayang yaa, jangan pernah pergi dari kari ya 
+          sayang karena kari disini bener bener mau mengusahakan eepy sayang ♡♡.
+        </p>
+
+        <p class="signature">with all my love ♡</p>
+      </div>
+    </section>
+
+    <section class="flowers-section section">
+      <div class="section-heading reveal">
+        <p class="mini-title">03 • pick a flower</p>
+        <h3>Setiap bunga punya<br><span>pesan kecil untuk eepy sayang.</span></h3>
+      </div>
+
+      <div class="flower-grid">
+        <button class="flower-card reveal" data-message="makacii karena udah memilih kari sampai detik ini ya sayang 🌹">
+          <span class="flower-icon">🌹</span>
+          <span class="flower-name">Rose</span>
+          <small>tap me</small>
+        </button>
+
+        <button class="flower-card reveal" data-message="kari pasti akan selalu mengusahakan eepy sayang yaa 💗">
+          <span class="flower-icon">🌷</span>
+          <span class="flower-name">Tulip</span>
+          <small>tap me</small>
+        </button>
+
+        <button class="flower-card reveal" data-message="kari harap hubungan kita langgeng dan berhasil dunia dan akhirat ya sayang 🌸">
+          <span class="flower-icon">🌸</span>
+          <span class="flower-name">Blossom</span>
+          <small>tap me</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="promise-section section">
+      <div class="promise-orbit reveal">
+        <span class="orbit-heart">♡</span>
+        <div class="promise-inner">
+          <p>and one more thing...</p>
+          <h3>still you.<br><span>always you.</span></h3>
+          <button class="heart-btn" id="heartButton">💗</button>
+          <small>press the heart</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      made with all of my love ♡
+    </footer>
+  </main>
+
+  <!-- Flower message popup -->
+  <div class="toast" id="toast">
+    <span id="toastText"></span>
+  </div>
+
+  <!-- final heart overlay -->
+  <div class="love-overlay" id="loveOverlay">
+    <button class="close-love" id="closeLove" aria-label="Tutup">×</button>
+    <div class="love-center">
+      <span class="big-heart">💗</span>
+      <h2>I love you.</h2>
+      <p>Happy monthversary, sayang ♡</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
